@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+
+    <h1>DS360: Computer Networks</h1>
+    <h2 id="subtitle">Midterm Review</h2>
+    <h2>Module 01</h2>
+    <div>
+        <h3>Terminologies:</h3>
+        <dl>
+            <dt>a. Message:</dt>
+            <dd>
+
+                the message is the information <em>(data)</em> to be communicated.
+
+            </dd>
+            <dt>b. Sender:</dt>
+            <dd>
+                The device that sends the message. <em>It can be a computer, workstation, telephone handset,
+                    or television.</em>
+            </dd>
+            <dt>c. Receiver:</dt>
+            <dd>
+                The device that receives the message.
+            </dd>
+            <dt>d. Transmission Medium:</dt>
+            <dd>
+                The physical path by which a message travels from sender to receiver.</li>
+
+            <dt>e. Protocol:</dt>
+            <dd>
+                a set of rules that govern data communication.
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <h3>Communication between two devices can be:</h3>
+        <dl>
+            <dt>Simplex Mode:</dt>
+            <dd>
+                The communication is <em>unidirectional</em>, as in a one-way street. Only one of the two devices on
+                link can transmit, the other can only receive.
+            </dd>
+            <dt>Half-duplex Mode:</dt>
+            <dd>
+                Each device can both send and receive, <em>but not at the same time</em>. When one device is
+                sending, the other can only receive, and vise versa.
+            </dd>
+            <dt>Full-duplex Mode:</dt>
+            <dd>Both stations can send and receive <em>simultaneously.</em></dd>
+        </dl>
+    </div>
+    <div>
+        <h3>Network Criteria</h3>
+        <p>A network must be able to meet the following criteria:</p>
+        <ol>
+            <li>Performance</li>
+            <li>Reliability</li>
+            <li>Security</li>
+        </ol>
+    </div>
+    <div>
+        <h3>Physical Structures:</h3>
+        <dl>
+            <dt>1. Types of Connection:</dt>
+            <dd>
+                <ul>
+                    <li><em>Point-to-Point</em>: A dedicated link between two devices.</li>
+                    <li><em>Multipoint</em>: A connection in which more than two devices share a single link.</li>
+                </ul>
+            </dd>
+            <dt>2. Topology: <em>The physical representation of the relationship of all links and linking devices:</em>
+            </dt>
+            <dd>
+                <ul>
+                    <li><em>Mesh</em>: Every device has a dedicated <em>point-to-point</em> link to every other device.
+                    </li>
+                    <li><em>Star</em>: Each device has a dedicated <em>point-to-point</em> link only to a <em>central
+                            controller</em>, usually called a <em>hub</em>.</li>
+                    <li><em>Bus</em>: one long cable acts as a <em>backbone</em> linking all devices in the network.
+                    </li>
+                    <li><em>Ring</em>: Each device has a dedicated <em>point-to-point</em> connection with only the
+                        <em>two devices on either side of it</em>.
+                    </li>
+
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <h3>Network Types:</h3>
+        <ol>
+            <li>Local Area Network <em>LAN</em></li>
+            <li>Wide Area Network <em>WAN</em></li>
+        </ol>
+    </div>
+    <div>
+        <h3>Switching:</h3>
+        <dl>
+            <dt>a. <em>Circuit</em>-switched Network:</dt>
+            <dd>A dedicated connection, called a <em>circuit</em>, is always available between the two end systems.</dd>
+            <dt>b. <em>Packet</em>-switched Network:</dt>
+            <dd>The data transfers into a network in the form of <em>packets</em>. Each packet uses a different path
+                toward the end system.</dd>
+        </dl>
+    </div>
+    <h2>Module 02</h2>
+    <div>
+        <h3>1. Logical Connection:</h3> means that we have a <em>Layer-to-Layer</em> communication
+    </div>
+    <div>
+        <h3>2. TCP/IP:</h3> is a protocol suite. It is short for <em>Transmission Control Protocol/Internet
+            Protocol</em>.
+    </div>
+    <div>
+        <h3>3. <em>TCP/IP</em> Layers are:</h3>
+        <ol type="a">
+            <li><em>Application</em>: To allow access to network resources.</li>
+            <li><em>Transport</em>: To provide reliable process to process communications, and error recovery.</li>
+            <li><em>Network</em>: Move packets from source to destination. Provide internetworking.</li>
+            <li><em>Data Link</em>: To organize bits into frames. Provides hop-to-hop delivery.</li>
+            <li><em>Physical</em>: Transmits bits over a medium.</li>
+        </ol>
+    </div>
+    <div>
+        <h3>4. Encapsulation:</h3> Data is moving from upper layer to lower layer while packing of data.
+    </div>
+    <div>
+        <h3>5. Decapsulation:</h3> Data is moving from lower layer to upper layer while unpacking of data.
+    </div>
+    <div>
+        <h3>6. Multiplexing:</h3> Means that a protocol can encapsulate a packet from several next-higher layer
+        protocols.
+    </div>
+    <div>
+        <h3>7. Demultiplexing</h3> Means that a protocol can decapsulate and deliver a packet to several
+        next-higher layer protocols.
+    </div>
+
+
+    <h2> Modules 03</h2>
+    <div>
+        <h3>1. Transmission Impairment:</h3>
+        <p>This means that the signal at the <em>beginning of the medium</em> is not the same as the signal at the <em>
+                end
+                of the
+                medium
+            </em>.</p>
+    </div>
+    <div>
+        <h3>3. Impairment Causes:</h3>
+        <dl>
+            <dt>a. Attenuation:</dt>
+            <dd>
+                <ol type="i">
+                    <li>It means loss of energy.</li>
+                    <li>When a signal, simple or composite, travels through a medium, it loses some its energy in
+                        overcoming the resistance of the medium.</li>
+                    <li><em>Amplifiers</em> are used to <em>Amplify</em> the signal.</li>
+                </ol>
+            </dd>
+            <dt>b. Distortion:</dt>
+            <dd>
+                <ul>
+                    <li>Means the signal changes its form and shape.</li>
+                </ul>
+            </dd>
+            <dt>c. Noise:</dt>
+            <dd>
+                <ol type="i">
+                    <li><em>Thermal noise</em> is the random motion of electrons in a wire, which creates an extra
+                        signal not originally sent by the transmitter.</li>
+                    <li><em>Induced noise</em> comes from sources such as motors and appliances.</li>
+                    <li><em>Crosstalk</em> is the effect of one wire on the other.</li>
+                    <li><em>Impulse noise</em> is a spike (a signal with high energy in a very short period of time)
+                        that comes from power lines, lightning.</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <h3>3. Performance:</h3>
+        <dl>
+            <dt>a. Bandwidth:</dt>
+            <dd>The number of bits per second that a channel, a link, or even a network can transmit.</dd>
+            <dt>b. Throughput:</dt>
+            <dd>
+                A measure of how much data we can send through a network.
+            </dd>
+            <dt>c. Latency<em>(Delay)</em>:</dt>
+            <dd>
+                How long it takes for an entire message to completely arrive at the destination from the time the first
+                bit is sent out from the source.
+            </dd>
+            <dt>d. Jitter:</dt>
+            <dd>Different packets of data encounter different delays.</dd>
+        </dl>
+    </div>
+    <h2>Module 04</h2>
+    <div>
+        <h3>Classes of Transmission Media</h3>
+    </div>
+    <div>
+        <h3><em>a. Guided:</em></h3>
+        <dl>
+            <dt>i. Twisted Pair Cable:</dt>
+            <dd>
+                <ol>
+                    <li>Two conductors (normally copper), each with its own plastic insulation, twisted together.
+                    </li>
+                </ol>
+            </dd>
+            <dt>ii. Coaxial Cable:</dt>
+            <dd>
+                <ol>
+                    <li>Carries signals of higher frequency than those in twisted pair cable.</li>
+                    <li>The outer metallic wrapping serves both as a shield against noise and as a second conductor.
+                    </li>
+                    <li>It has a much higher bandwidth</li>
+                    <li>Attenuations are much higher compared to twisted pair cable.</li>
+                </ol>
+            </dd>
+            <dt>iii. Fiber-optic cable:</dt>
+            <dd>
+                <ol>
+                    <li>Transmits signal in the form of light.</li>
+                    <li>Attenuations flatter than in the case of twisted-pair cable and coaxial cable.</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <h3><em>b. Unguided:</em></h3>
+        <dl>
+            <dt>i. Radio:</dt>
+            <dd>
+                <ol>
+                    <li>Use omnidirectional antennas that send out signals in all directions.</li>
+                    <li>Useful for multicasting.</li>
+                </ol>
+            </dd>
+            <dt>ii. Microwave</dt>
+            <dt>iii. Infrared:</dt>
+            <dd>
+                <ol>
+                    <li>Used for short-range communication.</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+    <h2>Module 05</h2>
+    <div>
+        <h3>1. Communication at the <em>data-link layer</em> is <em>node-to-node</em>.</h3>
+    </div>
+    <div>
+        <h3>2. Data-link Layer Services:</h3>
+        <ol type="a">
+            <li>Farming</li>
+            <li>Flow Control</li>
+            <li>Error Control</li>
+            <li>Congestion Control</li>
+        </ol>
+    </div>
+    <div>
+        <h3>3. The data-link layer controls how the medium is used.</h3>
+    </div>
+
+    <div>
+        <h3>4. The data-link layer can be divided into <em>two sub-layers</em>:</h3>
+        <ol type="a">
+            <li>Data Link Control <em>DLC</em></li>
+            <li>Media Access Control <em>MAC</em></li>
+        </ol>
+    </div>
+    <div>
+        <h3><em>Three</em> Types of Addresses:</h3>
+        <dl>
+            <dt>a. <em>Unicasting</em> means <em>one-to-one</em> communication:</dt>
+            <dd>The <em>second digit</em> in the Ethernet bits need to be an <em>even</em> number.</dd>
+            <dt>b. <em>Multicasting</em> means <em>one-to-many</em> communication:</dt>
+            <dd>
+                The <em>second digit</em> in the Ethernet bits need to be an <em>odd</em> number.
+            </dd>
+            <dt>c. <em>Broadcasting</em> means <em>one-to-all</em> communication:</dt>
+            <dd><em>All the digits</em> in the Ethernet bits are <em>1s</em></dd>
+        </dl>
+    </div>
+    <div>
+        <h3>6. <em>ARP</em> (Address Resolution Protocol)</h3>
+        <p>Accepts an <em>IP Address</em> from the <em>IP protocol</em>, maps the address to the corresponding
+            <em>link-layer address</em>, and passes it to the <em>data-link layer</em>.
+        </p>
+    </div>
+
+    <div>
+        <h3>7. Multiple-Access Protocol:</h3>
+    </div>
+    <div>
+        <h3><em>7.1. Random Access Protocols</em></h3>
+        <dl>
+            <dt>i. Aloha</dt>
+            <dd>
+                <ol>
+                    <li>There are potential collisions.</li>
+                </ol>
+            </dd>
+            <dt>ii. CSMA/CD</dt>
+            <dd>
+                <ol>
+                    <li>A station <em>monitors</em> the medium after it sends a frame to see if the transmission was
+                        successful or
+                        not.</li>
+                </ol>
+            </dd>
+            <dt>iii. CSMA/CA</dt>
+            <dd>
+                <ol>
+                    <li>Each station <em>first listen to the medium</em> (or check the state of the medium) before
+                        sending.</li>
+                    <li>Reduce possibility of collision.</li>
+                    <li>Collisions are avoided through the use of <em>three</em> strategies:</li>
+                    <ol type="a">
+                        <li>Interframe space <em>IFS</em></li>
+                        <li>Contention window.</li>
+                        <li>Acknowledgement.</li>
+                    </ol>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+
+    <div>
+        <h3><em>7.2. Channelization Protocols:</em></h3>
+        <dl>
+            <dt>i. Frequency-Division Multiple Access <em>FDMA</em></dt>
+            <dd>
+                <ol>
+                    <li>The available bandwidth is divided into frequency bands (<em>channels</em>)</li>
+                    <li>
+                        Each station is <em>allocated a band</em> to send its data.
+                    </li>
+                </ol>
+            </dd>
+            <dt>ii. Time-Division Multiple Access <em>TDMA</em></dt>
+            <dd>
+                <ol>
+                    <li>Each station is <em>allocated a time slot</em> during which it can send data.</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+    <h2>Module 06</h2>
+    <div>
+        <h3>1. Ethernet Evolution</h3>
+
+    </div>
+    <div>
+        <h3><em>a. Standard Ethernet 10 Mbps</em></h3>
+        <dl>
+            <dt>1. Connectionless & Unreliable</dt>
+            <dt>2. Addressing:</dt>
+            <dd>
+                <ol type="i">
+                    <li><em>6 bytes</em> (48bits) address, normally written in <em>hexadecimal</em> notation, with a
+                        colon between bytes.</li>
+                    <li>The <em>source</em> is always a <em>unicast</em> address - the frame comes from only one
+                        station.</li>
+                    <li>The <em>destination address</em> can be <em>unicast</em>, <em>multicast</em>, or
+                        <em>broadcast</em>.
+                    </li>
+                </ol>
+            </dd>
+            <dt>3. Access Method: <em>CSMA/CD</em> with <em>1-persistent method</em></dt>
+            <dt>4. Implementation:</dt>
+            <dd>
+                <ol type="i">
+                    <li><em>Coaxial cable</em> (bus topology)</li>
+                    <li>A set of <em>twisted-pair cables</em> with a <em>hub</em> (star topology)</li>
+                    <li>Transmission is always <em>broadcast</em>.</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+
+    <div>
+        <h3><em>b. Ethernet Frame Structure:</em></h3>
+        <ol type="i">
+            <li>Preamble</li>
+            <li>SFD</li>
+            <li>Dest. Address</li>
+            <li>Source Address</li>
+            <li>Type</li>
+            <li>Data & Padding</li>
+            <li>CRC</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3><em>c. Fast Ethernet 100 Mbps</em></h3>
+        <ol type="i">
+            <li>The MAC sublayer was left <em>unchanged</em>.</li>
+            <li>The <em>transmission rate, access method, and implementation</em> had to be <em>changed</em>.</li>
+        </ol>
+    </div>
+    <div>
+        <h3><em>d. Gigabit Ethernet 1 Gbps</em></h3>
+    </div>
+    <div>
+        <h3><em>e. 10 Gigabit Ethernet 10 Gbps</em></h3>
+        <ol type="i">
+            <li>Operates only in <em>full-duplex</em> mode.</li>
+        </ol>
+    </div>
+    <h2>Module 07</h2>
+    <div>
+        <h3>Discuss The Various Connecting Devices:</h3>
+        <dl>
+            <dt>a. Hubs:</dt>
+            <dd>
+                <ol type="i">
+                    <li>Operates only in the <em>physical layer</em>.</li>
+                    <li>A <em>repeater/hub</em> receives a signal and, before it becomes too weak or corrupted, <em>
+                            regenerates
+                            and
+                            retimes
+                        </em> the original bit pattern.</li>
+                </ol>
+            </dd>
+            <dt>b. Switches:</dt>
+            <dd>
+                <ol type="i">
+                    <li>Operate in both the <em>physical</em> and the <em>data-link</em> layers.</li>
+                    <li><em>Regenerates</em> the signal it receives.</li>
+                </ol>
+            </dd>
+            <dt>c. Routers:</dt>
+            <dd>
+                <ol type="i">
+                    <li>A <em>three-layer</em> device; it operates in the <em>physical, data-link, and network</em>
+                        layers.</li>
+                    <li>Can connect the <em>whole system</em> to the <em>internet</em>.</li>
+                </ol>
+            </dd>
+        </dl>
+
+    </div>
+    <div>
+        <h3>The process for finding the <em>spanning tree</em> involves <em>three steps</em>:</h3>
+        <ul>
+            <li>Each switch broadcasts its ID so that all switches know which one <em>has the smallest ID</em>.</li>
+            <li>The algorithm tries to find the <em>shortest path</em> from the <em>root switch</em> to every other
+                switch or <em>LAN</em>.</li>
+            <li>We mark the ports the are <em>part of the path</em>. We also mark <em>ports that are not part of the
+                    path</em>.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

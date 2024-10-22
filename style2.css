@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    /* Light background for a soft reading experience */
+    color: #333;
+    /* Dark gray text for good readability */
+    line-height: 1.6;
+    /* Comfortable line spacing */
+    padding: 20px;
+    margin: 0;
+}
+
+
+
+
+/* Headings */
+h1 {
+    color: #0056b3;
+    /* Blue for main title */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    background-color: darkslategrey;
+    color: #f0f4f8;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #003366;
+    /* Darker blue for section headings */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    text-transform: capitalize;
+
+}
+
+/* Add horizontal line under each h3 */
+h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0056b3;
+    /* Same color as the main title for consistency */
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+#subtitle {
+    text-align: center;
+    color: #d9534f;
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* List Items */
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+ol ol li {
+    background-color: rgb(210, 247, 244);
+}
+
+ul ol li {
+    background-color: rgb(210, 247, 244);
+}
+
+ol ul li {
+    background-color: rgb(210, 247, 244);
+}
+
+ul ul li {
+    background-color: rgb(210, 247, 244);
+}
+
+
+/* Blockquotes or Emphasized Text */
+em {
+    color: #d9534f;
+    /* Red for emphasis */
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    /* Blue links */
+    text-decoration: none;
+}
+
+/* Definition Lists */
+dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0056b3;
+}
+
+dl dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Block Styling for better clarity */
+div {
+    background-color: #ffffff;
+    /* White background for notes */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+}
+
+/* Make text inside lists stand out */
+ul li,
+ol li {
+    padding: 5px;
+    background-color: #f0f4f8;
+    /* Subtle background to separate list items */
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Optional: Change font size for mobile readability */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    h1,
+    h3 {
+        font-size: 1.5em;
+    }
+}
